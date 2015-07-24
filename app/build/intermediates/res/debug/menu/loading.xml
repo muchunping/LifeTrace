@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_search"
+          android:icon="@android:drawable/ic_menu_search"
+          android:title="@string/action_bar_search"
+          app:showAsAction="ifRoom"
+          app:actionViewClass="android.support.v7.widget.SearchView" />
+    <item android:id="@+id/action_add"
+          android:icon="@android:drawable/ic_menu_add"
+          android:title="@string/action_bar_add"
+          app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_edit"
+          android:icon="@android:drawable/ic_menu_edit"
+          android:title="@string/action_bar_edit"
+          app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_share"
+          android:icon="@android:drawable/ic_menu_share"
+          android:title="@string/action_bar_share"
+          app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_sort"
+          android:icon="@android:drawable/ic_menu_sort_by_size"
+          android:title="@string/action_bar_sort"
+          app:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@+id/action_sort_size"
+                  android:icon="@android:drawable/ic_menu_sort_by_size"
+                  android:title="@string/action_bar_sort_size"
+                  android:onClick="onSort" />
+            <item android:id="@+id/action_sort_alpha"
+                  android:icon="@android:drawable/ic_menu_sort_alphabetically"
+                  android:title="@string/action_bar_sort_alpha"
+                  android:onClick="onSort" />
+        </menu>
+    </item>
+</menu>
+<!-- From: file:/D:/development/git%20project/SuiXinJi/app/src/main/res/menu/loading.xml -->

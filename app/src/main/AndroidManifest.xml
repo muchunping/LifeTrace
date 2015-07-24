@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ilife.suixinji" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ilife.suixinji.LoadingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="MainActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity android:name="GuideActivity" >
+        </activity>
+        <activity android:name="FlipActivity" >
+        </activity>
+        <activity
+            android:name=".ui.NewRecordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".ui.NewFundLogActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true" >
+        </activity>
+    </application>
+
+</manifest>
